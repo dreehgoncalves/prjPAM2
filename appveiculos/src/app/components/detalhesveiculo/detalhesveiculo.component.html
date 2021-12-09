@@ -1,0 +1,16 @@
+<menu-principal></menu-principal>
+<div class="container p-3 mt-2">
+  <div class="card my-2">
+    <div class="card-body">
+      <div class="card-title">
+        {{ carro.marca }} {{ carro.modelo }}
+      </div>
+      <div class="card-subtitle">
+        {{ carro.proprietario }}
+      </div>
+      <div class="card-content">
+        {{ carro.preco_venda | currency: 'BRL' : 'symbol': '4.2-2' }}
+      </div>
+    </div>
+  </div>
+</div>

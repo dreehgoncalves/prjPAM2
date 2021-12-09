@@ -1,0 +1,16 @@
+<menu-principal></menu-principal>
+<div class="container mt-3">
+  <div class="card my-2" *ngFor="let c of carros" (click)="abrirDetalhes(c)">
+    <div class="card-body">
+      <div class="card-title">
+        {{ c.marca }} {{ c.modelo }}
+      </div>
+      <div class="card-subtitle">
+        {{ c.proprietario }}
+      </div>
+      <div class="card-content">
+        {{ c.preco_venda | currency: 'BRL' : 'symbol': '4.2-2' }}
+      </div>
+    </div>
+  </div>
+</div>
